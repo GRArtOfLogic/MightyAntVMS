@@ -50,6 +50,22 @@ sudo gdebi --non-interactive ~/Downloads/nxwitness-server-4.2.0.32840-linux_arm6
 #Configure Nx Server to enumerate removeable Storage then restart service
 sudo sed -i "$ a allowRemovableStorages=1" /opt/networkoptix/mediaserver/etc/mediaserver.conf
 sudo service networkoptix-mediaserver restart
+echo ""
+echo ""
+#Download AOL Obj Rec Perpetual
+echo ""
+echo ""
+echo -e "\e[7mDownload Object Recognition Library\e[0m"
+echo ""
+sudo wget <AzureDevopsLinktoObjRecLibrary> -P ~/Downloads
+echo ""
+echo ""
+#Install AOL ObjRec
+echo ""
+echo ""
+sudo gdebi ~/Download/<insertobjrecid
+echo ""
+echo ""
 #Download Wallpaper
 echo -e "\e[7mSet Wallpaper\e[0m"
 sudo wget -P 
